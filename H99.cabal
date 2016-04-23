@@ -18,6 +18,11 @@ library
   default-language:    Haskell2010
   ghc-options:         -Wall
   exposed-modules:     Problem27
+                     , Problem31
+                     , Problem32
+                     , Problem33
+                     , Problem34
+                     , Problem35
   hs-source-dirs:      src
   build-depends:       base >= 4.7 && < 5
 
