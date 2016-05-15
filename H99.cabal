@@ -25,6 +25,8 @@ library
                      , Problem35
                      , Problem36
                      , Problem39
+                     , Problem46
+                     , Problem48
   hs-source-dirs:      src
   build-depends:       base >= 4.7 && < 5
 
