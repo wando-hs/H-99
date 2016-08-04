@@ -16,7 +16,6 @@ tested-with:         GHC == 7.10.2
 
 library
   default-language:    Haskell2010
-  ghc-options:         -Wall
   exposed-modules:     Problem27
                      , Problem31
                      , Problem32
@@ -27,6 +26,7 @@ library
                      , Problem39
                      , Problem46
                      , Problem48
+                     , Problem61
   hs-source-dirs:      src
   build-depends:       base >= 4.7 && < 5
 
