@@ -27,6 +27,6 @@ atLevel (Node _ left right) n = recur left ++ recur right
     where recur tree = atLevel tree $ pred n
 
 buildTree :: Integer -> Tree Char
-buildTree h = xablau 1
-    where xablau x | x > h = Empty
-                   | otherwise = Node 's' (xablau (2*x)) (xablau (2*x+1))
+buildTree h = build 1
+    where build x | x > h = Empty
+                   | otherwise = Node 's' (build (2*x)) (build (2*x+1))
