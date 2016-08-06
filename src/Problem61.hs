@@ -1,4 +1,4 @@
-module Problem61 (Tree(..), countLeaves, leaves, leaf) where
+module Problem61 (Tree(..), countLeaves, leaves, leaf, buildTree) where
 
 data Tree a = Empty | Node a (Tree a) (Tree a)
     deriving (Show)
@@ -26,3 +26,7 @@ atLevel (Node x _ _) 1 = [x]
 atLevel (Node _ left right) n = recur left ++ recur right
     where recur tree = atLevel tree $ pred n
 
+buildTree :: Integer -> Tree Char
+buildTree h = xablau 1
+    where xablau x | x > h = Empty
+                   | otherwise = Node 's' (xablau (2*x)) (xablau (2*x+1))
